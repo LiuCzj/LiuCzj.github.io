@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <div class="audience-switch">
+    <button class="btn active" onclick="filterAudience('all')">全部文章</button>
+    <button class="btn" onclick="filterAudience('public')">📖 科普入门</button>
+    <button class="btn" onclick="filterAudience('professional')">🔬 技术深潜</button>
+  </div>
+  <div id="post-list">
+    {{ range where .Site.RegularPages "Type" "in" (slice "popular" "pro") }}
+      <article class="card" data-audience="{{ .Params.audience }}">
+        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <div class="tags">
+          {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+          <span class="tag" style="background: var(--accent); color: #000;">
+            {{ if eq .Params.audience "professional" }}技术深潜{{ else }}科普入门{{ end }}
+          </span>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+  <script>
+    function filterAudience(type) {
+      document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+      if (type === 'all') {
+        document.querySelector('.btn').classList.add('active');
+      } else {
+        event.target.classList.add('active');
+      }
+      document.querySelectorAll('#post-list article').forEach(a => {
+        if (type === 'all' || a.dataset.audience === type) {
+          a.style.display = '';
+        } else {
+          a.style.display = 'none';
+        }
+      });
+    }
+  </script>
+{{ end }}

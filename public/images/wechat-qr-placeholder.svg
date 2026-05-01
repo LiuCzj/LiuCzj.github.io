@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="15" fill="#0b0f19" stroke="#00d4ff" stroke-width="2"/>
+  <text x="100" y="80" text-anchor="middle" fill="#00d4ff" font-size="18" font-family="sans-serif">微信公众号</text>
+  <text x="100" y="110" text-anchor="middle" fill="#e0e6ed" font-size="22" font-weight="bold" font-family="sans-serif">锦创AI</text>
+  <text x="100" y="140" text-anchor="middle" fill="#aaa" font-size="12" font-family="sans-serif">科技·洞察·AI知识</text>
+  <!-- 模拟二维码图案 -->
+  <g transform="translate(60,150)">
+    <rect x="0" y="0" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+    <rect x="16" y="0" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+    <rect x="8" y="8" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+    <rect x="24" y="8" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+    <rect x="0" y="16" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+    <rect x="24" y="16" width="8" height="8" fill="#00d4ff" opacity="0.6"/>
+  </g>
+  <text x="100" y="185" text-anchor="middle" fill="#666" font-size="10" font-family="sans-serif">（请替换为真实二维码）</text>
+</svg>

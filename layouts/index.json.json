@@ -1,0 +1,10 @@
+{{- $.Scratch.Set "posts" slice -}}
+{{- range where .Site.RegularPages "Type" "in" (slice "popular" "pro") -}}
+  {{- $.Scratch.Add "posts" (dict
+      "url" .RelPermalink
+      "title" .Title
+      "content" (.Plain | truncate 300)
+      "tags" .Params.tags
+  ) -}}
+{{- end -}}
+{{- $.Scratch.Get "posts" | jsonify -}}

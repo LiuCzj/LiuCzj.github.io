@@ -1,0 +1,20 @@
+baseURL = "https://liuczj.github.io/"
+locale = "zh-Hans"
+title = "锦创AI"
+
+[params]
+  description = "专注AI技术分享——科普入门与技术深潜"
+  author = "锦创AI"
+  github = "https://github.com/LiuCzj"
+  csdn = "https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640"
+  zhihu = "https://www.zhihu.com/people/datafenxi"
+  email = "placeholder@example.com"   # 替换为你的邮箱
+  wechatQR = "/images/wechat-qr-placeholder.svg"  # 以后替换为真实二维码
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]   # JSON 供搜索使用
+  section = ["HTML", "RSS"]

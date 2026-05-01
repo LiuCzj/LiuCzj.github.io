@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags | 锦创AI</title>
+  <link rel="stylesheet" href="/css/custom.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2" defer></script>
+  <script src="/js/search.js" defer></script>
+  <script src="/js/theme-toggle.js" defer></script>
+</head>
+<body>
+  <header class="container">
+  <nav class="navbar">
+    <a href="/" class="logo">🚀 锦创AI</a>
+    <ul class="nav-links">
+      <li><a href="/">首页</a></li>
+      <li><a href="/popular/">科普入门</a></li>
+      <li><a href="/pro/">技术深潜</a></li>
+      <li><a href="/projects/">项目</a></li>
+      <li><a href="/about/">关于</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle">🌓 模式</button>
+  </nav>
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="搜索文章、标签...">
+    <div id="search-results"></div>
+  </div>
+</header>
+  <main class="container">
+    
+  <h1>Tags</h1>
+  
+  
+    <article class="card">
+      <h2><a href="/tags/python/">Python</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B/">异常检测</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/">时间序列</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">深度学习</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a></h2>
+      <p></p>
+    </article>
+  
+    <article class="card">
+      <h2><a href="/tags/%E7%A7%91%E6%99%AE/">科普</a></h2>
+      <p></p>
+    </article>
+  
+
+  </main>
+  <footer class="footer container">
+  <div class="social-icons">
+  <a href="https://github.com/LiuCzj" target="_blank" title="GitHub">🐙</a>
+  <a href="https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640" target="_blank" title="CSDN">📘</a>
+  <a href="https://www.zhihu.com/people/datafenxi" target="_blank" title="知乎">🤔</a>
+  <a href="mailto:placeholder@example.com" title="邮箱">✉️</a>
+  <a href="#" id="wechat-trigger" title="微信公众号">💬</a>
+</div>
+<div id="wechat-popup" style="display:none; margin-top:1rem;">
+  <img src="/images/wechat-qr-placeholder.svg" alt="微信公众号" width="180">
+  <p>扫码关注「锦创AI」</p>
+</div>
+<script>
+document.getElementById('wechat-trigger').addEventListener('click', (e) => {
+  e.preventDefault();
+  const popup = document.getElementById('wechat-popup');
+  popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+});
+</script>
+  <p>© 2026 锦创AI · 使用 Hugo & GitHub Pages 构建</p>
+</footer>
+</body>
+</html>
