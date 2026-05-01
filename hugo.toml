@@ -2,19 +2,49 @@ baseURL = "https://liuczj.github.io/"
 locale = "zh-Hans"
 title = "锦创AI"
 
+# 作者/站点核心参数（用于全局调用）
 [params]
-  description = "专注AI技术分享——科普入门与技术深潜"
+  description = "专注于机器学习、时间序列与计算机视觉的AI技术博客。提供科普入门与技术深潜内容。"
   author = "锦创AI"
+  # 统一管理社交链接
   github = "https://github.com/LiuCzj"
   csdn = "https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640"
   zhihu = "https://www.zhihu.com/people/datafenxi"
-  email = "placeholder@example.com"   # 替换为你的邮箱
-  wechatQR = "/images/wechat-qr-placeholder.svg"  # 以后替换为真实二维码
+  email = "placeholder@example.com"
+  wechatQR = "/images/wechat-qr-placeholder.svg"
 
+# 内容分类法（自动生成分类和标签页）
 [taxonomies]
   category = "categories"
   tag = "tags"
 
+# 输出格式：为搜索和订阅生成专用文件
 [outputs]
-  home = ["HTML", "RSS", "JSON"]   # JSON 供搜索使用
+  home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
+
+# 主导航菜单（对位参考站的简洁导航）
+[[menu.main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "科普入门"
+  pageRef = "/popular"
+  weight = 2
+
+[[menu.main]]
+  name = "技术深潜"
+  pageRef = "/pro"
+  weight = 3
+
+[[menu.main]]
+  name = "项目"
+  pageRef = "/projects"
+  weight = 4
+
+[[menu.main]]
+  name = "关于"
+  pageRef = "/about"
+  weight = 5

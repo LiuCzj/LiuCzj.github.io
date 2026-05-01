@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="stylesheet" href="/css/custom.css">
-  {{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- 预加载字体（与参考站一致） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- 搜索所需库 -->
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2" defer></script>
   <script src="/js/search.js" defer></script>
   <script src="/js/theme-toggle.js" defer></script>

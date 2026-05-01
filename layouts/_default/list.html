@@ -1,10 +1,13 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1 style="margin-bottom: 1.5rem;">{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
     <article class="card">
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Summary }}</p>
+      <p class="summary">{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary | truncate 120 }}{{ end }}</p>
+      <div class="tags">
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
     </article>
   {{ end }}
 {{ end }}

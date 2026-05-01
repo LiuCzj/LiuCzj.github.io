@@ -1,13 +1,25 @@
 {{ define "main" }}
-  <article class="card">
-    <h1>{{ .Title }}</h1>
-    <div style="color: #aaa; margin-bottom: 1rem;">
-      {{ .Date.Format "2006-01-02" }} · 
-      {{ if eq .Params.audience "professional" }}技术深潜{{ else }}科普入门{{ end }}
+  <article class="card" style="padding: 2rem;">
+    <header style="margin-bottom: 1.5rem;">
+      <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">{{ .Title }}</h1>
+      <div class="meta">
+        <time>{{ .Date.Format "2006-01-02" }}</time>
+        <span>·</span>
+        <span>{{ .ReadingTime }} 分钟阅读</span>
+        {{ if .Params.audience }}
+          <span>·</span>
+          <span class="audience-badge">{{ if eq .Params.audience "professional" }}技术深潜{{ else }}科普入门{{ end }}</span>
+        {{ end }}
+      </div>
+    </header>
+    <div class="content">
+      {{ .Content }}
     </div>
-    <div>{{ .Content }}</div>
-    <div class="tags">
-      {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+    <div class="tags" style="margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+      <span style="font-weight:600; margin-right:0.5rem; color:var(--text);">标签：</span>
+      {{ range .Params.tags }}
+        <a href="/tags/{{ . | urlize }}" class="tag">{{ . }}</a>
+      {{ end }}
     </div>
   </article>
   {{ partial "giscus.html" . }}

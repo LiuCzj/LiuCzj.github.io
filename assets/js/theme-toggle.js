@@ -1,5 +1,6 @@
 (function() {
   const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const saved = localStorage.getItem('theme');
   if (saved === 'light' || (!saved && !prefersDark)) {

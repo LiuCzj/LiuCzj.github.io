@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>锦创AI | 锦创AI</title>
+  <meta name="description" content="专注于机器学习、时间序列与计算机视觉的AI技术博客。提供科普入门与技术深潜内容。">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2" defer></script>
   <script src="/js/search.js" defer></script>
@@ -14,88 +20,98 @@
 <body>
   <header class="container">
   <nav class="navbar">
-    <a href="/" class="logo">🚀 锦创AI</a>
+    <a href="/" class="logo">
+      <span>🧠</span> 锦创AI
+    </a>
     <ul class="nav-links">
-      <li><a href="/">首页</a></li>
-      <li><a href="/popular/">科普入门</a></li>
-      <li><a href="/pro/">技术深潜</a></li>
-      <li><a href="/projects/">项目</a></li>
-      <li><a href="/about/">关于</a></li>
+      
+        <li><a href="/" class="active">首页</a></li>
+      
+        <li><a href="/popular/" class="">科普入门</a></li>
+      
+        <li><a href="/pro/" class="">技术深潜</a></li>
+      
+        <li><a href="/projects/" class="">项目</a></li>
+      
+        <li><a href="/about/" class="">关于</a></li>
+      
     </ul>
-    <button id="theme-toggle" class="theme-toggle">🌓 模式</button>
+    <button id="theme-toggle" class="theme-toggle" aria-label="切换暗色模式">
+      🌓 <span class="mode-text">模式</span>
+    </button>
   </nav>
   <div class="search-box">
-    <input type="text" id="search-input" placeholder="搜索文章、标签...">
+    <input type="text" id="search-input" placeholder="🔍 搜索文章、标签..." autocomplete="off">
     <div id="search-results"></div>
   </div>
 </header>
   <main class="container">
     
+  <section style="text-align: center; padding: 2rem 0 1.5rem;">
+    <img src="/images/avatar-placeholder.svg" alt="锦创AI" width="100" height="100" style="border-radius:50%; background:var(--surface); padding:4px; border:2px solid var(--border);">
+    <h1 style="font-size: 2rem; margin: 1rem 0 0.3rem; letter-spacing: -1px;">锦创AI</h1>
+    <p style="color: var(--text-light); font-size: 1.1rem; max-width: 560px; margin: 0 auto;">
+      专注于机器学习、时间序列与计算机视觉的AI技术博客。提供科普入门与技术深潜内容。
+    </p>
+    <div style="margin-top: 1.2rem; display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+      <span style="background:var(--surface); border:1px solid var(--border); padding:0.2rem 0.8rem; border-radius:20px; font-size:0.8rem;">🤖 机器学习</span>
+      <span style="background:var(--surface); border:1px solid var(--border); padding:0.2rem 0.8rem; border-radius:20px; font-size:0.8rem;">📈 时间序列</span>
+      <span style="background:var(--surface); border:1px solid var(--border); padding:0.2rem 0.8rem; border-radius:20px; font-size:0.8rem;">👁️ 计算机视觉</span>
+    </div>
+  </section>
+
   <div class="audience-switch">
-    <button class="btn active" onclick="filterAudience('all')">全部文章</button>
+    <button class="btn active" onclick="filterAudience('all')">📋 全部</button>
     <button class="btn" onclick="filterAudience('public')">📖 科普入门</button>
     <button class="btn" onclick="filterAudience('professional')">🔬 技术深潜</button>
   </div>
+
   <div id="post-list">
     
       <article class="card" data-audience="public">
-        <h2 class="card-title"><a href="/popular/2026-05-01-ai-for-everyone/">AI 如何悄悄改变了我们的日常？</a></h2>
-        <p><p>你有没有发现，手机相册能自动帮你分类照片？视频网站推荐的节目越来越合你口味？这背后都是人工智能在默默工作。本文用几个生活小例子，带你了解AI其实并不神秘……</p>
-<h1 id="从零开始理解机器学习生活中的学习">从零开始理解机器学习：生活中的&quot;学习&quot;</h1>
-<h2 id="什么是机器学习">什么是机器学习？</h2>
-<p>想象一下，你第一次学开车的过程。刚开始，你对方向盘、油门、刹车都不熟悉，需要教练一步步指导。随着练习次数增加，你逐渐掌握了在不同路况下应该如何操作。一段时间后，你甚至能在陌生的路上熟练驾驶。</p>
-<p>机器学习正是模拟了这种&quot;学习&quot;过程——让计算机通过大量数据和经验，自动改进其性能。</p>
-<h2 id="生活中的机器学习例子">生活中的机器学习例子</h2>
-<h3 id="1-推荐系统">1. 推荐系统</h3>
-<p>当你在购物网站浏览商品时，系统会根据你的历史购买记录和浏览行为，推荐可能感兴趣的商品。这就是机器学习在分析你的偏好。</p>
-<h3 id="2-导航软件">2. 导航软件</h3>
-<p>地图导航软件能预测交通拥堵情况并规划最佳路线，因为它学习了大量实时交通数据。</p>
-<h3 id="3-语音助手">3. 语音助手</h3>
-<p>手机里的语音助手能够识别你的声音指令，是因为它学习了大量语音样本。</p>
-<h2 id="机器学习的基本原理">机器学习的基本原理</h2>
-<p>简单来说，机器学习包含三个步骤：</p>
-<ol>
-<li><strong>输入数据</strong>：给计算机提供大量例子</li>
-<li><strong>训练模型</strong>：让计算机从中找出规律</li>
-<li><strong>做出预测</strong>：用学到的规律处理新情况</li>
-</ol>
-<p>就像教小孩认识动物：先给他看很多猫和狗的图片，告诉他哪些是猫、哪些是狗，然后他就能自己分辨新的动物图片了。</p>
-<h2 id="机器学习能做什么">机器学习能做什么？</h2>
-<ul>
-<li><strong>分类任务</strong>：判断邮件是否为垃圾邮件</li>
-<li><strong>回归预测</strong>：预测房价或股票走势</li>
-<li><strong>聚类分析</strong>：发现客户群体特征</li>
-<li><strong>异常检测</strong>：识别信用卡欺诈交易</li>
-</ul>
-<h2 id="总结">总结</h2>
-<p>机器学习并不是什么神秘的技术，它是让计算机具备&quot;学习&quot;能力的一种方法。虽然背后的数学原理可能复杂，但其核心思想非常直观——从经验中学习，然后应用所学知识。</p>
-<p>在接下来的文章中，我会用更多生动的例子和简单的代码演示，带你深入了解机器学习的世界。</p></p>
+        <div class="meta">
+          <time>2026-05-01</time>
+          <span class="audience-badge">科普入门</span>
+        </div>
+        <h2><a href="/popular/2026-05-01-ai-for-everyone/">AI 如何悄悄改变了我们的日常？</a></h2>
+        <p class="summary">从手机相册到推荐算法，聊聊AI如何渗透进普通人的生活。</p>
         <div class="tags">
-          <span class="tag">人工智能</span><span class="tag">科普</span><span class="tag">生活</span>
-          <span class="tag" style="background: var(--accent); color: #000;">
-            科普入门
-          </span>
+          
+            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD" class="tag">人工智能</a>
+          
+            <a href="/tags/%E7%A7%91%E6%99%AE" class="tag">科普</a>
+          
+            <a href="/tags/%E7%94%9F%E6%B4%BB" class="tag">生活</a>
+          
         </div>
       </article>
     
       <article class="card" data-audience="professional">
-        <h2 class="card-title"><a href="/pro/2026-05-01-time-series-anomaly-detection/">时间序列异常检测实战：从统计模型到深度学习</a></h2>
-        <p><p>在工业物联网和运维监控中，异常检测是关键一环。本文将从3-sigma法则、孤立森林，一直讲到基于自编码器和Transformer的无监督方法，并提供可复现的代码示例。</p>
-<p>（正文请按需扩写）</p></p>
+        <div class="meta">
+          <time>2026-05-01</time>
+          <span class="audience-badge">技术深潜</span>
+        </div>
+        <h2><a href="/pro/2026-05-01-time-series-anomaly-detection/">时间序列异常检测实战：从统计模型到深度学习</a></h2>
+        <p class="summary">工业级异常检测方案对比，附可复现代码。</p>
         <div class="tags">
-          <span class="tag">时间序列</span><span class="tag">异常检测</span><span class="tag">深度学习</span><span class="tag">Python</span>
-          <span class="tag" style="background: var(--accent); color: #000;">
-            技术深潜
-          </span>
+          
+            <a href="/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97" class="tag">时间序列</a>
+          
+            <a href="/tags/%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B" class="tag">异常检测</a>
+          
+            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0" class="tag">深度学习</a>
+          
+            <a href="/tags/python" class="tag">Python</a>
+          
         </div>
       </article>
     
   </div>
   <script>
     function filterAudience(type) {
-      document.querySelectorAll('.btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.audience-switch .btn').forEach(b => b.classList.remove('active'));
       if (type === 'all') {
-        document.querySelector('.btn').classList.add('active');
+        document.querySelector('.audience-switch .btn').classList.add('active');
       } else {
         event.target.classList.add('active');
       }
@@ -112,16 +128,29 @@
   </main>
   <footer class="footer container">
   <div class="social-icons">
-  <a href="https://github.com/LiuCzj" target="_blank" title="GitHub">🐙</a>
-  <a href="https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640" target="_blank" title="CSDN">📘</a>
-  <a href="https://www.zhihu.com/people/datafenxi" target="_blank" title="知乎">🤔</a>
-  <a href="mailto:placeholder@example.com" title="邮箱">✉️</a>
-  <a href="#" id="wechat-trigger" title="微信公众号">💬</a>
-</div>
-<div id="wechat-popup" style="display:none; margin-top:1rem;">
-  <img src="/images/wechat-qr-placeholder.svg" alt="微信公众号" width="180">
-  <p>扫码关注「锦创AI」</p>
-</div>
+    <a href="https://github.com/LiuCzj" target="_blank" title="GitHub">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+    </a>
+    <a href="https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640" target="_blank" title="CSDN">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="3" width="20" height="18" rx="2"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-weight="bold">C</text></svg>
+    </a>
+    <a href="https://www.zhihu.com/people/datafenxi" target="_blank" title="知乎">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><text x="12" y="18" text-anchor="middle" font-size="18" font-weight="bold">知</text></svg>
+    </a>
+    <a href="mailto:placeholder@example.com" title="邮箱">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+    </a>
+    <a href="#" id="wechat-trigger" title="微信公众号">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><text x="12" y="18" text-anchor="middle" font-size="16">💬</text></svg>
+    </a>
+  </div>
+  <div id="wechat-popup" style="display:none; margin: 1rem auto;">
+    <img src="/images/wechat-qr-placeholder.svg" alt="微信公众号：锦创AI" width="160" style="border-radius: 12px; box-shadow: var(--shadow);">
+    <p style="font-size:0.85rem; margin-top:0.5rem; color:var(--text-light);">扫码关注「锦创AI」</p>
+  </div>
+  <p>© 2026 锦创AI · 由 Hugo & GitHub Pages 驱动</p>
+</footer>
+
 <script>
 document.getElementById('wechat-trigger').addEventListener('click', (e) => {
   e.preventDefault();
@@ -129,7 +158,5 @@ document.getElementById('wechat-trigger').addEventListener('click', (e) => {
   popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
 });
 </script>
-  <p>© 2026 锦创AI · 使用 Hugo & GitHub Pages 构建</p>
-</footer>
 </body>
 </html>
