@@ -6,12 +6,13 @@ title = "锦创AI"
 [params]
   description = "专注于机器学习、时间序列与计算机视觉的AI技术博客。提供科普入门与技术深潜内容。"
   author = "锦创AI"
+  avatar = "/images/avatar.png"       # 头像路径，将来把图片命名为 avatar.jpg 放在 static/images/ 即可
   # 统一管理社交链接
   github = "https://github.com/LiuCzj"
   csdn = "https://blog.csdn.net/datafenxi?spm=1000.2115.3001.10640"
   zhihu = "https://www.zhihu.com/people/datafenxi"
   email = "placeholder@example.com"
-  wechatQR = "/images/wechat-qr-placeholder.svg"
+  wechatQR = "/images/wechat-qrcode.jpg" # 公众号二维码路径，同样替换文件即可
 
 # 内容分类法（自动生成分类和标签页）
 [taxonomies]

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>锦创AI</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 锦创AI</description>
+    <generator>Hugo</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI 如何悄悄改变了我们的日常？</title>
+      <link>http://localhost:1313/popular/2026-05-01-ai-for-everyone/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/popular/2026-05-01-ai-for-everyone/</guid>
+      <description>&lt;p&gt;你有没有发现，手机相册能自动帮你分类照片？视频网站推荐的节目越来越合你口味？这背后都是人工智能在默默工作。本文用几个生活小例子，带你了解AI其实并不神秘……&lt;/p&gt;&#xA;&lt;h1 id=&#34;从零开始理解机器学习生活中的学习&#34;&gt;从零开始理解机器学习：生活中的&amp;quot;学习&amp;quot;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;什么是机器学习&#34;&gt;什么是机器学习？&lt;/h2&gt;&#xA;&lt;p&gt;想象一下，你第一次学开车的过程。刚开始，你对方向盘、油门、刹车都不熟悉，需要教练一步步指导。随着练习次数增加，你逐渐掌握了在不同路况下应该如何操作。一段时间后，你甚至能在陌生的路上熟练驾驶。&lt;/p&gt;&#xA;&lt;p&gt;机器学习正是模拟了这种&amp;quot;学习&amp;quot;过程——让计算机通过大量数据和经验，自动改进其性能。&lt;/p&gt;&#xA;&lt;h2 id=&#34;生活中的机器学习例子&#34;&gt;生活中的机器学习例子&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-推荐系统&#34;&gt;1. 推荐系统&lt;/h3&gt;&#xA;&lt;p&gt;当你在购物网站浏览商品时，系统会根据你的历史购买记录和浏览行为，推荐可能感兴趣的商品。这就是机器学习在分析你的偏好。&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-导航软件&#34;&gt;2. 导航软件&lt;/h3&gt;&#xA;&lt;p&gt;地图导航软件能预测交通拥堵情况并规划最佳路线，因为它学习了大量实时交通数据。&lt;/p&gt;&#xA;&lt;h3 id=&#34;3-语音助手&#34;&gt;3. 语音助手&lt;/h3&gt;&#xA;&lt;p&gt;手机里的语音助手能够识别你的声音指令，是因为它学习了大量语音样本。&lt;/p&gt;&#xA;&lt;h2 id=&#34;机器学习的基本原理&#34;&gt;机器学习的基本原理&lt;/h2&gt;&#xA;&lt;p&gt;简单来说，机器学习包含三个步骤：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;输入数据&lt;/strong&gt;：给计算机提供大量例子&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;训练模型&lt;/strong&gt;：让计算机从中找出规律&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;做出预测&lt;/strong&gt;：用学到的规律处理新情况&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;就像教小孩认识动物：先给他看很多猫和狗的图片，告诉他哪些是猫、哪些是狗，然后他就能自己分辨新的动物图片了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;机器学习能做什么&#34;&gt;机器学习能做什么？&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;分类任务&lt;/strong&gt;：判断邮件是否为垃圾邮件&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;回归预测&lt;/strong&gt;：预测房价或股票走势&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;聚类分析&lt;/strong&gt;：发现客户群体特征&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;异常检测&lt;/strong&gt;：识别信用卡欺诈交易&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;&#xA;&lt;p&gt;机器学习并不是什么神秘的技术，它是让计算机具备&amp;quot;学习&amp;quot;能力的一种方法。虽然背后的数学原理可能复杂，但其核心思想非常直观——从经验中学习，然后应用所学知识。&lt;/p&gt;&#xA;&lt;p&gt;在接下来的文章中，我会用更多生动的例子和简单的代码演示，带你深入了解机器学习的世界。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>时间序列异常检测实战：从统计模型到深度学习</title>
+      <link>http://localhost:1313/pro/2026-05-01-time-series-anomaly-detection/</link>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pro/2026-05-01-time-series-anomaly-detection/</guid>
+      <description>&lt;p&gt;在工业物联网和运维监控中，异常检测是关键一环。本文将从3-sigma法则、孤立森林，一直讲到基于自编码器和Transformer的无监督方法，并提供可复现的代码示例。&lt;/p&gt;&#xA;&lt;p&gt;（正文请按需扩写）&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

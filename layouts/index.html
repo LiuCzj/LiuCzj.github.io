@@ -1,6 +1,6 @@
 {{ define "main" }}
   <section style="text-align: center; padding: 2rem 0 1.5rem;">
-    <img src="/images/avatar-placeholder.svg" alt="锦创AI" width="100" height="100" style="border-radius:50%; background:var(--surface); padding:4px; border:2px solid var(--border);">
+    <img src="{{ .Site.Params.avatar }}" alt="头像" width="100" height="100" style="border-radius:50%; ">
     <h1 style="font-size: 2rem; margin: 1rem 0 0.3rem; letter-spacing: -1px;">锦创AI</h1>
     <p style="color: var(--text-light); font-size: 1.1rem; max-width: 560px; margin: 0 auto;">
       {{ .Site.Params.description }}
